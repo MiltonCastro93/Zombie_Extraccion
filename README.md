@@ -45,9 +45,26 @@ El mapa está poblado por diferentes tipos de enemigos:
 
 ## 🖼️ Capturas del proyecto
 
-_(Imágenes de libre licencia o propias)_  
+_(Imágenes de libre licencia utilizadas con fines académicos)_
 
-![Gameplay 1](https://github.com/MiltonCastro93/Main_Game_Mechanics_with-Unity/blob/main/Captura%20de%20pantalla%202025-11-02%20144834.png)
+<div align="center">
+
+<table>
+  <tr>
+    <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20150950.png" width="380"/></td>
+    <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20150857.png" width="380"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20151052.png" width="380"/></td>
+    <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20151104.png" width="380"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20151125.png" width="380"/></td>
+    <td><img src="URL_IMAGEN_6" width="380"/></td>
+  </tr>
+</table>
+
+</div>
 
 > *Exploración de la fábrica con enemigos y elementos interactivos visibles.*
 
