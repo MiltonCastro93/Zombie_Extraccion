@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50" style="vertical-align:middle;" />
-<span style="font-size:24px; font-weight:bold; margin: 0 10px;">🧟‍♂️ Zombie Extracción 🧟‍♂️</span>
+<span style="font-size:32px; font-weight:bold; margin: 0 10px;">🧟‍♂️ Zombie Extracción 🧟‍♂️</span>
 <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50" style="vertical-align:middle;" />
 
 </div>
