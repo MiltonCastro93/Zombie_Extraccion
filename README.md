@@ -65,7 +65,6 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
   </tr>
   <tr>
     <td><img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/Captura%20de%20pantalla%202025-11-02%20151125.png" width="380"/></td>
-    <td><img src="URL_IMAGEN_6" width="380"/></td>
   </tr>
 </table>
 
