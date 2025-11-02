@@ -1,5 +1,10 @@
-| <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> | **🧟‍♂️ Zombie Extracción 🧟‍♂️** | <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> |
-|---|---|---|
+<div align="center">
+
+<img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50" style="vertical-align:middle;" />
+<span style="font-size:24px; font-weight:bold; margin: 0 10px;">🧟‍♂️ Zombie Extracción 🧟‍♂️</span>
+<img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50" style="vertical-align:middle;" />
+
+</div>
 
 > **Zombie Extracción** es un **Prototipo de supervivencia en tercera persona**, inspirado en *Resident Evil 3 Classic*.  
 > Desarrollado con **Unity 2024**, **C#**, utilizando **assets gratuitos de Unity**, animaciones de **Mixamo**, modelos propios de **Blender** y un **icono creado en Krita**.
