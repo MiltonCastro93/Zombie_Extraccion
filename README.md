@@ -7,6 +7,7 @@
 
 > **Zombie Extracción** es un **Prototipo de supervivencia en tercera persona**, inspirado en *Resident Evil 3 Classic*.  
 > Desarrollado con **Unity 2024**, **C#**, utilizando **assets gratuitos de Unity**, animaciones de **Mixamo**, modelos propios de **Blender** y un **icono creado en Krita**.
+> Juego Publicado en <a href="https://milton93.itch.io/zombie-extraction" target="_blank"><img src="https://github.com/MiltonCastro93/hello-world/blob/main/itchio-logo-white.png" alt="krita" width="80" height="60"/></a></li>
 
 ---
 
