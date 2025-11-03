@@ -1,32 +1,81 @@
 <div align="center">
 
-| <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> | <h1>** Zombie Extracción **</h1> | <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> |
+| <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> | <h1>🧟‍♂️ Zombie Extracción 🧟‍♂️</h1> | <img src="https://github.com/MiltonCastro93/Zombie_Extraccion/blob/main/nuevoicon.png" width="50"/> |
 |---|---|---|
 
 </div>
 
-> **Zombie Extracción** es un **Prototipo de supervivencia en tercera persona**, inspirado en *Resident Evil 3 Classic*.  
-> Desarrollado con **Unity 2024**, **C#**, utilizando **assets gratuitos de Unity**, animaciones de **Mixamo**, modelos propios de **Blender** y un **icono creado en Krita**.
+> **Zombie Extracción** es un **prototipo de supervivencia en tercera persona**, inspirado en *Resident Evil 3 Classic*.  
+> Desarrollado con **Unity 2024**, **C#**, utilizando **assets gratuitos de Unity**, animaciones de **Mixamo**, modelos propios de **Blender**, un **icono creado en Krita**, y **diseño sonoro original** grabado y editado por **Milton Castro**.
 
 ---
 
 ## 🧠 Descripción general
 
-En **Zombie Extracción**, el jugador debe explorar una **fábrica abandonada plagada de zombies**, buscando una **tarjeta de acceso** para extraer del mapa.  
-El proyecto busca **replicar la tensión y progresión del RE3 Classic**, pero con **dirección artística única**, con un **ambiente opresivo y mucha oscuridad**.
-
-El mapa está poblado por diferentes tipos de enemigos:
-
-- **Humanoides:** Zombie normal, Colosos, Rápidos  
-- **Animales:** Pájaros, Perros  
+En **Zombie Extracción**, el jugador debe explorar una **fábrica abandonada plagada de zombies**, buscando una **tarjeta de acceso** para escapar del lugar.  
+El proyecto busca **replicar la tensión y progresión del RE3 Classic**, pero con una **dirección artística y sonora única**, ambientada en un entorno **oscuro y opresivo**.
 
 ---
 
-## ⚙️ Detalles técnicos
+## 🎧 Visión sonora
+
+El diseño sonoro toma como principal referencia la atmósfera cinematográfica y opresiva de *Resident Evil 3*.  
+Se trabajó con una mezcla de **paisajes sonoros urbanos decadentes**, **efectos aleatorios** y **silencios estratégicos**, buscando generar **tensión y vulnerabilidad constante**.
+
+**Enfoque principal:**  
+Crear un entorno auditivo que evoque peligro y descomposición, utilizando sonidos de la vida cotidiana reinterpretados como parte del mundo postapocalíptico.
+
+---
+
+## 🎙️ Detalle de activos sonoros
+
+| Tipo | Descripción |
+|------|--------------|
+| **Voces originales** | Grabadas por **Milton Castro**, tanto para el personaje jugable como para los gruñidos de zombies. Capturadas con **grabadora Zoom**, manteniendo naturalidad con ajustes mínimos. |
+| **Foley original** | Sonidos de puertas, pasos, respiración y alertas grabados manualmente en interiores para lograr resonancia real. |
+| **SFX externos** | Disparos y pasos específicos descargados de bancos libres para complementar el diseño sonoro. |
+| **Edición y mezcla** | Efectos procesados en software con **pitch shifting**, **reverb** y **EQ**, simulando espacios cerrados o húmedos. |
+
+🎛️ *Ejemplo de cadena de efectos aplicada (voz de zombie):*  
+Pitch Shifter → Reverb → EQ  
+> Resultado: una voz distorsionada, con eco y tono bajo que transmite incomodidad y amenaza.
+
+---
+
+## 🔊 Integración sonora en Unity
+
+Los sonidos fueron integrados directamente mediante **AudioSource** y **scripts en C#**.  
+Se utilizaron **eventos y triggers** para activar los audios según el contexto:
+
+- **Pasos:** sincronizados con la velocidad del jugador.  
+- **Respiración:** activada en estado Idle o de alerta.  
+- **Zombies:** sonidos de detección mediante raycasts.  
+- **Ambiente:** loops urbanos aplicados en zonas del mapa.  
+
+🎯 *Desafío:* sincronizar la lógica de audio con las animaciones y acciones del jugador sin generar solapamientos.
+
+---
+
+## 🧩 Optimización de audio
+
+- **Formato utilizado:** `.mp3` (buena calidad y compresión eficiente).  
+- **Control de peso:** archivos cortos y ligeros para minimizar el consumo de memoria.  
+- **Reutilización:** se evitó la repetición de clips para dar variedad a cada zombie.  
+
+---
+
+## 🧪 Playtesting y evaluación
+
+Durante las pruebas se detectaron pequeños problemas de mezcla, especialmente entre los sonidos de **disparo** y **pasos**.  
+Actualmente se está evaluando si el origen es **código o mezcla sonora**, con el fin de mejorar la claridad y priorización del audio.
+
+---
+
+## 🧱 Detalles técnicos generales
 
 | Elemento | Descripción |
-|-----------|--------------|
-| 🧩 **Motor** | Unity 2024 (versión LTS) |
+|-----------|-------------|
+| 🧩 **Motor** | Unity 2024 (LTS) |
 | 💻 **Lenguaje** | C# |
 | 🎮 **Tipo de proyecto** | Prototipo académico |
 | 🧠 **Inspiración** | Resident Evil 3 Classic |
@@ -39,18 +88,15 @@ El mapa está poblado por diferentes tipos de enemigos:
 
 ## 🔫 Mecánicas principales
 
-- **Exploración y supervivencia:** el jugador debe moverse sigilosamente por la fábrica evitando o enfrentando zombies.  
-- **Objetivo principal:** encontrar la tarjeta de acceso para extraer del mapa.  
-- **Variedad de enemigos:** cada tipo de zombie tiene comportamiento y velocidad distintos.  
-- **Sistema de inventario:** recoge botiquines y objetos útiles como la tarjeta de acceso.  
-- **Ambiente opresivo:** iluminación dinámica y zonas oscuras que incrementan tensión.  
-- **IA enemiga:** enemigos patrullan, detectan al jugador y reaccionan de forma progresiva.  
+- Exploración y supervivencia en una fábrica infectada.  
+- Recolección de ítems y gestión del inventario.  
+- Variedad de enemigos con IA y comportamiento propio.  
+- Iluminación dinámica que refuerza la tensión.  
+- Integración sonora contextual en cada evento del juego.
 
 ---
 
 ## 🖼️ Capturas del proyecto
-
-_(Imágenes de libre licencia utilizadas con fines académicos)_
 
 <div align="center">
 
@@ -70,121 +116,33 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 
 </div>
 
-> *Exploración de la fábrica con enemigos y elementos interactivos visibles.*
+> *Exploración de la fábrica y activadores sonoros en acción.*
 
 ---
 
-## 🧩 Arquitectura del código
+## 🧠 Autoevaluación
 
-- **PlayerController.cs** → Movimiento y acciones del jugador.  
-- **EnemyAI.cs** → Comportamiento y patrullaje de zombies y animales.  
-- **InventorySystem.cs** → Gestión de botiquines y tarjeta de acceso.  
-- **GameManager.cs** → Control de estado del juego y objetivos.  
-- **UIManager.cs** → Actualización dinámica del HUD (salud, inventario, objetivo).  
+- ✅ **Fortalezas:** diseño sonoro coherente y atmósfera lograda.  
+- ⚙️ **A mejorar:** mezcla entre pasos y disparos.  
+- 💡 **Aprendizaje:** importancia de planificar la estructura del audio en código para mantener claridad y consistencia.
 
 ---
 
-## 🎧 Diseño e Integración Sonora
+## 🚀 Reflexión sobre tendencias
 
-### 🎵 Visión Sonora  
-El diseño sonoro se inspira directamente en la atmósfera opresiva y cinematográfica de *Resident Evil 3*.  
-Se buscó transmitir **tensión, alerta y vulnerabilidad** a través de paisajes urbanos decadentes, silencios estratégicos y efectos ambientales.
-
-El objetivo fue crear un entorno auditivo que evoque **peligro inminente** y mantenga al jugador en constante estado de ansiedad.
-
----
-
-### 🎙️ Detalle de Activos
-
-**Activos Originales**
-- **Voces:** se utilizó mi propia voz para el personaje jugable y los gruñidos de los zombies, grabadas con grabadora **Zoom**.  
-- **Foley:** se registraron manualmente sonidos como **puertas, pasos, respiración** e **interacciones**, buscando una sensación realista y cercana.  
-
-**Activos Descargados**
-- **SFX complementarios:** disparos y pasos sobre superficies específicas obtenidos de **bancos de audio libres**, integrados cuando no era viable grabación propia.
-
-**Edición y Procesamiento**
-- Software de captura: **Zoom Recorder**  
-- Edición mínima: **normalización, recorte y control de niveles**.  
-- Procesamiento para zombies:  
-  - *Pitch Shifter:* reducción de tono para voz no humana.  
-  - *Reverb:* simula espacios cerrados y húmedos.  
-  - *EQ:* filtrado de agudos para tono apagado y pesado.  
-
-🎯 **Objetivo del procesamiento:** provocar incomodidad, reforzar la tensión ambiental y asegurar coherencia entre lo sonoro y lo visual.
-
----
-
-### 🔊 Integración Técnica
-
-Los sonidos fueron implementados en **Unity** mediante el sistema **AudioSource** y **scripts personalizados en C#**.
-
-| Evento | Activación sonora |
-|---------|-------------------|
-| **Pasos** | Se reproducen según la velocidad del jugador. |
-| **Respiración** | Activa en estado *idle* o *alerta*. |
-| **Zombies** | Emite gruñidos al detectar al jugador (raycasts). |
-| **Ambiente** | Loops ambientales reproducidos en zonas delimitadas. |
-
-**Desafíos:**  
-Sincronizar sonidos de pasos y disparos sin solapamiento perceptual.  
-Actualmente se realizan pruebas para balancear mezcla y prioridades de audio.
-
----
-
-### ⚙️ Optimización
-
-- **Formato:** `.mp3` (compresión ligera con buena calidad).  
-- **Control de peso:** archivos de corta duración para minimizar carga en ejecución.  
-- **No compresión adicional dentro de Unity**, evitando pérdida extra de calidad.  
-- **Reutilización parcial:** cada zombie usa clips distintos para generar variedad auditiva.
-
----
-
-### 🧪 Playtesting Sonoro
-
-Durante las pruebas se detectaron pequeños solapamientos entre **disparos y pasos**.  
-Se trabaja en ajustar la **prioridad y mezcla** de clips, buscando claridad e inmersión total.  
-
-✔️ Lo que funcionó bien:  
-- Integración general estable y coherente.  
-- Efectiva atmósfera de tensión.  
-
-💡 A mejorar:  
-- Equilibrio entre disparos y pasos.  
-
-📚 Aprendizaje:  
-Planificar la lógica de audio desde el código es clave para mantener escalabilidad y evitar conflictos en tiempo real.
-
----
-
-### 🤖 Reflexión sobre Tendencias
-
-- **IA sonora:** Los enemigos cuentan con dos estados auditivos — *idle* (respiración leve) y *detección* (grito).  
-- **Aplicación emocional:** los cambios de estado buscan generar sobresalto y mantener la tensión narrativa.  
-- **Enfoque futuro:** priorizar la integración técnica del audio antes que el diseño procedural o espacial.
-
----
-
-## 🎯 Propósito académico
-
-El desarrollo de **Zombie Extracción** tuvo como objetivo:
-
-- Implementar **IA básica y avanzada** para distintos tipos de enemigos.  
-- Desarrollar **exploración y progresión de objetivos** en un mapa cerrado.  
-- Aplicar **iluminación y efectos de ambiente** para generar tensión.  
-- Explorar **integración de audio original y técnico dentro del motor**.  
+- **IA en audio:** en el juego, los zombies usan IA sonora con estados Idle (respiración) y Detección (grito de alerta).  
+- **Futuro:** el foco continuará en programación e implementación técnica del sonido, más que en generación procedural o espacial.
 
 ---
 
 ## 📜 Licencia
 
 Proyecto de uso **académico y sin fines comerciales**.  
-Todos los recursos utilizados son **de libre licencia o de autoría propia**.
+Todos los recursos son **de libre licencia o creados por el desarrollador**.
 
 ---
 
 ## ✨ Cierre
 
-> *“Sobrevivir no solo depende de tus reflejos, sino de tu capacidad de adaptarte al entorno — también a cómo suena el miedo.”*  
-> — Milton Castro
+> *“Sobrevivir no solo depende de tus reflejos, sino de tu oído y tu capacidad de anticipar el peligro.”*  
+> — **Milton Castro**
