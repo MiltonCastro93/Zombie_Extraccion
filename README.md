@@ -84,6 +84,88 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 
 ---
 
+## 🎧 Diseño e Integración Sonora
+
+### 🎵 Visión Sonora  
+El diseño sonoro se inspira directamente en la atmósfera opresiva y cinematográfica de *Resident Evil 3*.  
+Se buscó transmitir **tensión, alerta y vulnerabilidad** a través de paisajes urbanos decadentes, silencios estratégicos y efectos ambientales.
+
+El objetivo fue crear un entorno auditivo que evoque **peligro inminente** y mantenga al jugador en constante estado de ansiedad.
+
+---
+
+### 🎙️ Detalle de Activos
+
+**Activos Originales**
+- **Voces:** se utilizó mi propia voz para el personaje jugable y los gruñidos de los zombies, grabadas con grabadora **Zoom**.  
+- **Foley:** se registraron manualmente sonidos como **puertas, pasos, respiración** e **interacciones**, buscando una sensación realista y cercana.  
+
+**Activos Descargados**
+- **SFX complementarios:** disparos y pasos sobre superficies específicas obtenidos de **bancos de audio libres**, integrados cuando no era viable grabación propia.
+
+**Edición y Procesamiento**
+- Software de captura: **Zoom Recorder**  
+- Edición mínima: **normalización, recorte y control de niveles**.  
+- Procesamiento para zombies:  
+  - *Pitch Shifter:* reducción de tono para voz no humana.  
+  - *Reverb:* simula espacios cerrados y húmedos.  
+  - *EQ:* filtrado de agudos para tono apagado y pesado.  
+
+🎯 **Objetivo del procesamiento:** provocar incomodidad, reforzar la tensión ambiental y asegurar coherencia entre lo sonoro y lo visual.
+
+---
+
+### 🔊 Integración Técnica
+
+Los sonidos fueron implementados en **Unity** mediante el sistema **AudioSource** y **scripts personalizados en C#**.
+
+| Evento | Activación sonora |
+|---------|-------------------|
+| **Pasos** | Se reproducen según la velocidad del jugador. |
+| **Respiración** | Activa en estado *idle* o *alerta*. |
+| **Zombies** | Emite gruñidos al detectar al jugador (raycasts). |
+| **Ambiente** | Loops ambientales reproducidos en zonas delimitadas. |
+
+**Desafíos:**  
+Sincronizar sonidos de pasos y disparos sin solapamiento perceptual.  
+Actualmente se realizan pruebas para balancear mezcla y prioridades de audio.
+
+---
+
+### ⚙️ Optimización
+
+- **Formato:** `.mp3` (compresión ligera con buena calidad).  
+- **Control de peso:** archivos de corta duración para minimizar carga en ejecución.  
+- **No compresión adicional dentro de Unity**, evitando pérdida extra de calidad.  
+- **Reutilización parcial:** cada zombie usa clips distintos para generar variedad auditiva.
+
+---
+
+### 🧪 Playtesting Sonoro
+
+Durante las pruebas se detectaron pequeños solapamientos entre **disparos y pasos**.  
+Se trabaja en ajustar la **prioridad y mezcla** de clips, buscando claridad e inmersión total.  
+
+✔️ Lo que funcionó bien:  
+- Integración general estable y coherente.  
+- Efectiva atmósfera de tensión.  
+
+💡 A mejorar:  
+- Equilibrio entre disparos y pasos.  
+
+📚 Aprendizaje:  
+Planificar la lógica de audio desde el código es clave para mantener escalabilidad y evitar conflictos en tiempo real.
+
+---
+
+### 🤖 Reflexión sobre Tendencias
+
+- **IA sonora:** Los enemigos cuentan con dos estados auditivos — *idle* (respiración leve) y *detección* (grito).  
+- **Aplicación emocional:** los cambios de estado buscan generar sobresalto y mantener la tensión narrativa.  
+- **Enfoque futuro:** priorizar la integración técnica del audio antes que el diseño procedural o espacial.
+
+---
+
 ## 🎯 Propósito académico
 
 El desarrollo de **Zombie Extracción** tuvo como objetivo:
@@ -91,18 +173,18 @@ El desarrollo de **Zombie Extracción** tuvo como objetivo:
 - Implementar **IA básica y avanzada** para distintos tipos de enemigos.  
 - Desarrollar **exploración y progresión de objetivos** en un mapa cerrado.  
 - Aplicar **iluminación y efectos de ambiente** para generar tensión.  
-- Explorar **integración de assets externos** (Mixamo, Blender, Unity Store).  
+- Explorar **integración de audio original y técnico dentro del motor**.  
 
 ---
 
 ## 📜 Licencia
 
-Este proyecto es de uso **académico y sin fines comerciales**.  
-Todos los recursos utilizados son **de libre licencia** o creados por el desarrollador.
+Proyecto de uso **académico y sin fines comerciales**.  
+Todos los recursos utilizados son **de libre licencia o de autoría propia**.
 
 ---
 
 ## ✨ Cierre
 
-> *“Sobrevivir no solo depende de tus reflejos, sino de tu capacidad de adaptarte al entorno y tomar decisiones bajo presión.”*  
+> *“Sobrevivir no solo depende de tus reflejos, sino de tu capacidad de adaptarte al entorno — también a cómo suena el miedo.”*  
 > — Milton Castro
